@@ -1,0 +1,17 @@
+{
+  "name": "mvp-project",
+  "description": "MEAN stack To-Do List",
+  "main": "client/index.html",
+  "authors": [
+    "Kunal Rathi"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/k-rathi/MVP-Project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

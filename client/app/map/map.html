@@ -1,6 +1,13 @@
 <div>
   <ui-gmap-google-map center='map.center' events='map.events' zoom='map.zoom'>
-        <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" idkey="m.id" options="'options'"></ui-gmap-marker>
+        <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" idkey="m.id" options="{label:m.label}">
+          <ui-gmap-window show = 'true' closeClick = 'delete(m)' ng-cloak> 
+            <div><h3>To Do at {{m.coords.latitude}}, {{m.coords.longitude}}</h1>
+              <p>{{displayInfo(m)}}</p>
+            </div>
+              
+          </ui-gmap-window>
+        </ui-gmap-marker>
 
   </ui-gmap-google-map>
 </div>
