@@ -1,0 +1,25 @@
+{
+  "name": "mvp-project",
+  "version": "1.0.0",
+  "description": "MEAN stack To-Do List",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-rathi/MVP-Project.git"
+  },
+  "author": "Kunal Rathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-rathi/MVP-Project/issues"
+  },
+  "homepage": "https://github.com/k-rathi/MVP-Project#readme",
+  "dependencies": {
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "webpack": "^1.13.2"
+  }
+}

@@ -1,0 +1,15 @@
+<div id = 'sign-up'>
+  <h1>Sign Up</h1>
+  <form name = 'signUpForm' ng-submit='signup()'>
+    <input type='text' name='usernameInput' ng-model='user.username' ng-minlength='5'>
+    <div ng-messages="signUpForm.usernameInput.$error">
+      <p ng-message = "minlength"> longer username pls </p>
+    </div>
+    <input type="password" name = 'passwordInput' ng-model='user.password' ng-minlength='5'>
+    <div ng-messages="signUpForm.passwordInput.$error">
+      <p ng-message = "minlength"> longer pwd pls </p>
+    </div>
+    <button>Sign Up</button>
+  </form>
+  <a href="#/signin">Already have an account? <strong>Log In</strong> </a>
+</div>
