@@ -32,6 +32,9 @@ module.exports = {
         console.log(item);
         var newItem = {
           id: item.id,
+          date: item.date,
+          time: item.time,
+          location: item.location,
           lat: item['coords'].latitude,
           long: item['coords'].longitude,
           text: item.todo

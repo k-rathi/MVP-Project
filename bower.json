@@ -13,5 +13,18 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+   "dependencies": {
+    "angular-bootstrap": "^2.1.3",
+    "angular-google-maps": "^2.3.4",
+    "angular-material": "^1.1.0",
+    "angular-messages": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular": "^1.5.8",
+    "angularjs-geolocation": "^0.1.1",
+    "ngmap": "^1.17.4",
+    "ui-bootstrap": "^2.1.3"
+  },
+  
+  "private": true
 }

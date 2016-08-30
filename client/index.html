@@ -2,33 +2,30 @@
 <html ng-app='todo'>
 	<head>
   <title> Ultimate ToDo List </title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
 
 	</head>
 
 	<body>
-    <a href="#signin">Sign In </a>
     <div ng-view></div>
 
-    <script src='//maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyC9yAkR7DCOXR7JJ3EE11NOeusD5NgfMHM'></script>
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyC9yAkR7DCOXR7JJ3EE11NOeusD5NgfMHM'></script>
     <script src="bower_components/lodash/lodash.js"></script>
+    
     <script src="bower_components/angular/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
     <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-maps/2.3.2/angular-google-maps.js"></script>
     <script src="bower_components/angularjs-geolocation/src/geolocation.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
-      <!-- Angular Material Library -->
-      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
-      
     <script src="app/map/map.js"></script>
     <script src="app/services/services.js"></script>
     <script src="app/auth/auth.js"></script>
