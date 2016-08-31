@@ -7,3 +7,20 @@ input {
 h3{
 	font-size: 18px;
 }
+
+.header {
+	font-weight: bold;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}

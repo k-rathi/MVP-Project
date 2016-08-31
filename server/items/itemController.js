@@ -8,8 +8,8 @@ var findAllItems = Q.nbind(Item.find, Item);
 var removeItem = Q.nbind(Item.remove, Item);
 
 module.exports = {
-  allItems: function(req, res, next) {
-    return findAllItems();
+  allItems: function(obj) {
+    return findAllItems(obj);
   },
   oneItem: function(req, res, next) {
     return findItem();
@@ -37,7 +37,8 @@ module.exports = {
           location: item.location,
           lat: item['coords'].latitude,
           long: item['coords'].longitude,
-          text: item.todo
+          text: item.todo,
+          sentMessage: false
         }
         console.log(newItem);
         return createItem(newItem);

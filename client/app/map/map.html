@@ -1,13 +1,13 @@
 <div style = '{height: 50%}'>
   <ui-gmap-google-map center='map.center' events='map.events' zoom='map.zoom'>
-        <ui-gmap-search-box template="searchbox.template" events="searchbox.events"></ui-gmap-search-box>
-
-        <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" idkey="m.id" options="{label:m.label}">
+        <!-- <ui-gmap-search-box template="searchbox.template" events="searchbox.events"></ui-gmap-search-box> -->
+        <ui-gmap-marker coords="coords" options= 'myMarker' idkey ='1'></ui-gmap-marker>
+        <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" idkey="m.id">
           <ui-gmap-window show = 'false' closeClick = 'delete(m)' ng-cloak> 
             <div>
-              <h3>To Do at {{m.location}}</h3>
+              <h3>{{m.location}}</h3>
+              <h2>{{m.todo}}</h2>
               <p>by {{monthToString(m.date.getMonth())}} {{m.date.getDate()}}, {{m.date.getUTCFullYear()}} at {{m.time}} </p>
-              <p>{{m.todo}}</p>
             </div>
               
           </ui-gmap-window>

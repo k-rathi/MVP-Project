@@ -4,13 +4,23 @@
   <title> Ultimate ToDo List </title>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
 	</head>
 
 	<body>
+    <div>        
+      <div class = 'header'>The Ultimate To Do App </div>
+      <ul class = 'nav nav-pills'>
+        <li><a href='#signup'>Sign Up</a></li>
+        <li><a href='#signin'>Sign In</a></li>
+        <li><a href='#map'>To Dos</a></li>
+        <li><a href='#signout'>Sign Out</a></li>
+      </ul>
+    </div>
     <div ng-view></div>
 
-    <script src='//maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyC9yAkR7DCOXR7JJ3EE11NOeusD5NgfMHM'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyC9yAkR7DCOXR7JJ3EE11NOeusD5NgfMHM'></script>
     <script src="bower_components/lodash/lodash.js"></script>
     
     <script src="bower_components/angular/angular.js"></script>

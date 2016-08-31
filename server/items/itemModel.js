@@ -6,6 +6,7 @@ var ItemSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  sentMessage: Boolean,
   date: Date,
   location: String,
   time: String,
