@@ -141,7 +141,6 @@ angular.module('todo.map', ['uiGmapgoogle-maps', 'todo.services', 'ngMaterial'])
     };
 
     GMap.getGeolocation().then(function(geocoords) {
-
       $http.get('/api/items').then(function(response) {
 
         var initialData = response.data;

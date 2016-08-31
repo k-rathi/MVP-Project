@@ -105,5 +105,5 @@ app.post('/api/twilio', function(req, res) {
 });
 
 app.listen(8000);
-
+console.log('Server running at 8000');
 module.exports = app;
