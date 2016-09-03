@@ -1,13 +1,33 @@
-.angular-google-map-container { height: 500px; }
+body {
+	background: rgba(174, 198,207, 0.5);
+}
+.md-dialog-actions {
+background: rgba(174, 198,207, 0.5);
 
+}
+.angular-google-map-container { height: 800px; }
+/*.ngdialog.ngdialog-theme-default .ngdialog-content {
+	height: 500px;
+	text-align: center;
+}*/
+.md-dialog-container {
+	text-align:center;
+}
 input {
 	width: 500px;
+	text-align: center;
 }
 
 h3{
 	font-size: 18px;
 }
-
+button {
+	margin-left: 180px;
+	margin-right: 180px;
+}
+button:active {
+	background:none;
+}
 .header {
 	font-weight: bold;
 	display: flex;
@@ -16,6 +36,7 @@ h3{
 font-family: 'Montserrat', sans-serif;
 
 }
+
 
 ul {
   display: flex;

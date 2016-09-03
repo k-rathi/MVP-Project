@@ -43,7 +43,8 @@ angular.module('todo.map', ['uiGmapgoogle-maps', 'todo.services', 'ngMaterial'])
     };
     
     $scope.myMarker = {
-      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      animation: google.maps.Animation.DROP
     };
 
     setInterval(checkTwilio, 4000);
@@ -106,7 +107,7 @@ angular.module('todo.map', ['uiGmapgoogle-maps', 'todo.services', 'ngMaterial'])
         .cancel('Never mind');
       var checkWhen = $mdDialog.prompt()
         .textContent('')
-        .placeholder('When do you wnat to do it?')
+        .placeholder('When do you want to be reminded?')
         .ariaLabel('todotime')
         .targetEvent(ev)
         .ok('Okay!')
@@ -155,7 +156,7 @@ angular.module('todo.map', ['uiGmapgoogle-maps', 'todo.services', 'ngMaterial'])
 
         $scope.map = {
           center: { latitude: geocoords.lat, longitude: geocoords.long },
-          zoom: 11,
+          zoom: 14,
           markers: $scope.markerData,
           events: {
             click: function(map, eventName, originalEventArgs) {

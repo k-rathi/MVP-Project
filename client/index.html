@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='todo'>
+<html>
 	<head>
   <title> Ultimate ToDo List </title>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -8,14 +8,11 @@
 
 	</head>
 
-	<body>
+	<body ng-app='todo'>
     <div>        
-      <div class = 'header'>The Ultimate To Do App </div>
+      <div class = 'header'> <h3>The Ultimate To Do List </h3></div>
       <ul class = 'nav nav-pills'>
-        <li><a href='#signup'>Sign Up</a></li>
-        <li><a href='#signin'>Sign In</a></li>
         <li><a href='#map'>To Dos</a></li>
-        <li><a href='#signout'>Sign Out</a></li>
       </ul>
     </div>
     <div ng-view></div>
